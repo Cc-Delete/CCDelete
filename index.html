@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login/Signup page</title>
+  </head>
+  <body>
+    <!-- <h2>Sign in/ Sign up</h2> -->
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="">
+          <h1>注册你的通行证</h1>
+          <div class="social-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"> <i class="fab fa-google-plus-g"></i> </a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>使用你的手机号注册</span>
+          <input type="text" placeholder="姓名"></input>
+          <input type="tel" placeholder="手机号"name="tel" id="tel" required pattern="^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}">
+          <input type="password" placeholder="密码"></input>
+          <button id="signup">注册</button>
+        </form>
+        <div id="order" style="width: 200px;height: 30px;"></div>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="">
+          <h1>登录你的通行证</h1>
+          <div class="social-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"> <i class="fab fa-google-plus-g"></i> </a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>使用你的通行证</span>
+          <input type="tel" placeholder="手机号"name="tel" id="tel" required pattern="^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}">
+          <input type="password" placeholder="密码"></input>
+          <a href="#" id="forget">忘记密码？/注册</a>
+          <button>登录</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1> Wecome Back!</h1>
+            <p>
+              请使用您注册的通行证来进行登录
+            </p>
+            <button class="ghost" id="signIn">登录</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>你好，朋友!</h1>
+            <p>输入您的个人信息，并开始与我们的旅程</p>
+            <button class="ghost" id="signUp">注册</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Created with<i class="fa fa-heart"></i>by
+        <a href="https://github.com/Cc-Delete/CCDelete" target="_blank">niuniu的GIThub</a>
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
